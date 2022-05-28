@@ -1,7 +1,8 @@
 @charset "utf-8";
 
-ul { color:darkgray; list-style-type:upper-roman; }
+ul { color:rgb(52, 7, 252); list-style-type:upper-roman; }
 
-ul { background-color:darkgray; list-style-type:lower-alpha; }
 
-h1 { color: black; }
+ul { background-color:rgb(247, 10, 10); list-style-type:square; }
+
+h1 { color: rgb(245, 8, 154); }
