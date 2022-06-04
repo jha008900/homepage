@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>반응 선택자: 스트라이프 테이블 만들기</title>
+    <style>
+        tr:nth-child(2n) {
+            background-color: antiquewhite;
+        }
+        tr:hover {
+            background-color: aqua
+        }
+        .one {
+            background-color: black;
+            color: antiquewhite;
+        }
+    </style>
 </head>
 <body>
     <pre>    
@@ -17,7 +29,7 @@
     </pre>
     <table>
         <thead>
-            <tr>
+            <tr class="one">
                 <th>no</th>
                 <th>DepCode</th>
                 <th>DepName</th>

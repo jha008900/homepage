@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS3 반응 선택자</title>
+    <style>
+        h1:hover {color: red;}
+        a:visited {color: pink;}
+        a:link {color: orange;}
+        a:hover {color: red;}
+        input:focus {
+            background-color: yellow;
+        }
+        input[disabled] {
+            background-color: grey;
+        }
+        pre {
+            border:  2px solid blue;
+        }
+       input[checked] {
+           outline: 2px solid red;
+        }
+    </style>
 </head>
 <body>
     <pre>
@@ -44,4 +62,4 @@ input 태그에 checked가 설정되면 테두리를 만드시오
     </pre>
     <input type="checkbox" name="" checked />
 </body>
-</html>
+</html>
