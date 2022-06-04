@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>상태선택자</title>
+	<style>
+		*{
+			margin-left: -6px;
+		}
+		li {
+			list-style: none;
+			display:inline-block;
+			background-color: red;
+			width: 80px;
+			height: 40px;
+		}
+		li:nth-child(odd) {
+			background-color: blue;
+		}
+		#first {
+			border-bottom-left-radius: 20px;
+			border-top-left-radius: 20px;
+		}
+		#last {
+			border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+		}
+	</style>
 </head>
 
 <body>
@@ -37,14 +60,14 @@
 	</pre>
 
     <ul>
-        <li>1번째</li>
+        <li id="first">1번째</li>
         <li>2번째</li>
-        <li>3번째</li>
+		<li>3번째</li>
         <li>4번째</li>
-        <li>5번째</li>
+		<li>5번째</li>
         <li>6번째</li>
-        <li>7번째</li>
-        <li>8번째</li>
+		<li>7번째</li>
+        <li id="last">8번째</li>
     </ul>
 </body>
 
