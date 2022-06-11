@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>text-overflow</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        div.a {
+            width: 100px;
+            border: 1px solid green;
+            white-space: nowrap;/*태그의 영역(100px)을 넘가하는 텍스트는 버린다)*/
+            overflow: hidden; /*영역을 넘치는 텍스트는 버린다*/
+            text-overflow: ellipsis; /*가려진 텍스트는 ...으로 표시*/
+        }
+        div.a:hover {
+            white-space: normal;/*태그의 영역(100px)을 넘가하는 텍스트는 버린다)*/
+            overflow: visible; /*영역을 넘치는 텍스트는 버린다*/
+        }
+    </style>
 </head>
 <body>
     <h1>The text-overflow</h1>

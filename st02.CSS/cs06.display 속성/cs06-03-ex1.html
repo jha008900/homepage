@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>display 속성</title>
+    <style>
+        * {padding: 0; margin: 0; box-sizing: content-box;}
+        div > div {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 10px 20px 10px 20px;
+        }
+        .ex1 {
+            background-color: aqua;
+        }
+        .ex2 {
+            background-color: purple;
+        }
+        .ex3. {
+            background-color: brown;
+        }
+        #float > div {
+           float: left;
+        }
+        #float::after {
+            clear:both;
+            display:block;
+            content:''; }
+         #inlineblock > div {
+            display: inline-block;
+         }
+         #flex {
+            display: inline-flex;
+         }
+    </style>
 </head>
 <body>
 
@@ -13,7 +44,7 @@
         <div class="ex1">첫번째</div>
         <div class="ex2">두번째</div>
         <div class="ex3">세번째</div>
-    </div>
+    </div>  /*여기서 클리어하기*/
 
     <h2>display:inline-block 를 사용하여 수평으로 배열 시키시오.</h2>
     <div id="inlineblock">
@@ -22,11 +53,11 @@
         <div class="ex3">세번째</div>
     </div>
 
-    <h2>display:flex 를 사용하여 수평으로 배열 시키시오.</h2>
+    <h2>display:flex 를 사용하여 수평으로 배열 시키시오.(부모태그설정)</h2>
     <div id="flex">
         <div class="ex1">첫번째</div>
         <div class="ex2">두번째</div>
         <div class="ex3">세번째</div>
     </div>
 </body>
-</html>
+</html>

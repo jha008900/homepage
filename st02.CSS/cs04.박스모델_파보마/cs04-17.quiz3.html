@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>텍스트 스타일</title>
+    <link rel="stylesheet" href="../reset.css">
     <style>
         * {
-            font-family: "맑은고딕";
+            font-family: "맑은 고딕", "돋음";
         }
         h1 {
             font-size: 17px;
+            font-weight: bold;
         }
         p {
             font-size: 16px;
-            line-height:25px ;
+            line-height: 25px ;
         }
         .accent {
             font-weight: bold;
             color: red;
+        }
+        .container > div {
+            display: inline-block;
+        }
+        .container > .book-img {
+            width: 200px;
+        }
+        .container > .book-desc {
+            width: 600px;
         }
     </style>
 </head>
