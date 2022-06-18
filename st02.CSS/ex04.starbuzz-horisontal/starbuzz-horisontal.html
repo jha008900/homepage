@@ -6,6 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Starbuzz Coffee</title>
+    <style>
+    *{padding: 0; margin: 0; box-sizing: border-box;}
+
+    body {
+      background-color: #b5a789;
+      font-family: "맑은 고딕";
+    }
+   #header {
+    background-color: #644606;
+    margin: 10px;
+    padding: 20px;
+   }
+#tableRow {
+    display: flex;
+}
+#drinks {
+    background-color: #e5e5de;
+    margin: 0 10px 10px 10px;
+    padding: 20px;
+    width: 360px;
+   }
+   #main {
+    background-color: #e5e5de;
+    background-image: url(../images/bg4.png);
+    margin: 0 0px 10px 0px;
+    padding: 15px;
+   }
+   #sidebar {
+    background-color: #e5e5de;
+    background-image: url(../images/bg4.png);
+    margin: 0 10px 10px 10px;
+    padding: 15px;
+    background-position: bottom;
+    text-align: center;
+    width: 250px;
+   }
+   #aa {
+    text-align: left;
+   }
+   #award {
+    position: absolute; top:35px; left: 360px;
+   }
+   #footer {
+    background-color: #644606;
+    font-size: 12px;
+    text-align: center;
+    padding: 15px;
+    color: #e5e5de;
+   }
+   #headerSlogan {
+    float: right;
+   }
+   #header::after {
+    clear: both;
+   }
+</style>
 </head>
 
 <body>
@@ -15,7 +71,7 @@
       <img id="headerSlogan"
            src="images/headerSlogan.gif" alt="Providing all the caffeine you need to power your life.">
     </div>
-
+    <div id="pp">
 	<div id="award">
 		<img src="images/award.gif"
 			alt="Roaster of the Year award">
@@ -29,13 +85,13 @@
                 <p>Mocha Cafe Latte, $2.35</p>
                 <p>Cappuccino, $1.89</p>
                 <p>Chai Tea, $1.85</p>
-                
+
                 <div id="coupon">
                     <a href="freecoffee.html" title="Click here to get your free coffee">
                         <img src="images/ticket.gif" alt="Starbuzz coupon ticket">
                     </a>
                 </div>
-				
+
                 <h1>ELIXIRS</h1>
                 <p>
                     We proudly serve elixirs brewed by our friends
@@ -110,7 +166,7 @@
                         TO YOUR DOOR <br>
                     </span>
                 </p>
-                <p>
+                <p id="aa">
                     Why wait? You can order all our fine coffees right from the Internet with our new,
                     automated Bean Machine. How does it work? Just click on the Bean Machine link,
                     enter your order, and behind the scenes, your coffee is roasted, ground
@@ -119,7 +175,7 @@
             </div> <!-- sidebar -->
         </div> <!-- tableRow -->
     </div> <!-- tableContainer -->
-
+</div>
     <div id="footer">
         &copy; 2012, Starbuzz Coffee
         <br>

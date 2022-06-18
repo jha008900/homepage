@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>display flex</title>
+    <style>
+         *{padding: 0; margin: 0; box-sizing: content-box;} /*CSS초기화*/
+
+        html, body {height: 100%;} /*기본_화면에 꽉맞춤*/
+        body {
+            display: flex;
+            flex-direction: column; /*자식대크를 수직으로 배치정렬*/
+        }
+        body > div {
+            flex-shrink: 0;
+        }
+        .div1 {
+            background-color: yellow;
+        }
+        .div2 {
+            background-color: orange;
+            flex-grow: 1; /*아래부분만 늘어남*/
+        }
+    </style>
 </head>
 
 <body>
@@ -21,4 +40,4 @@
     </div>
 </body>
 
-</html>
+</html>

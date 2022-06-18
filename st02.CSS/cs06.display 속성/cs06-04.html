@@ -10,20 +10,38 @@
 
         ul {
             display: flex;
+        }
+        li {
             list-style-type: none;
+            display: inline-block;
+            background-color: greenyellow;
+            width: 100px;
+            height: 50px;
+            text-align: center; /*수평가운데정렬*/
+            line-height: 50px; /*높이만큼 넣으면 가운데 위치*/
+        }
+        .even {
+            background-color: red;
+        }
+        #first {
+            border-radius: 10px 0 0 10px
+        }
+        #end {
+        border-radius: 0 10px 10px 0;
+           background-color: red;
         }
     </style>
 </head>
 <body>
     <ul>
-        <li >1번째</li>
-        <li>2번째</li>
+        <li id="first">1번째</li>
+        <li class="even">2번째</li>
         <li>3번째</li>
-        <li>4번째</li>
+        <li class="even">4번째</li>
         <li>5번째</li>
-        <li>6번째</li>
-        <li>7번째</li>
-        <li>8번째</li>
+        <li class="even">6번째</li>
+        <li >7번째</li>
+        <li id="end">8번째</li>
     </ul>
 </body>
 </html>

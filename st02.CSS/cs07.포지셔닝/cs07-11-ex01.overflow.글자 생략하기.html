@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ellipsis</title>
+    <style>
+           *{padding: 0; margin: 0; box-sizing: border-box;}
+
+           h1 {
+            width: 300px;
+            white-space: nowrap; /*사이즈범위가 넘쳐도 줄바꿈 안됨*/
+            overflow: hidden; /*분모의 기준(300) 넘는 것은 감춘다(버림)*/
+            text-overflow: ellipsis; /*감춰진부분을 ...(점)으로 처리*/
+           }
+           p {
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+           }
+    </style>
 </head>
 <body>
     <h1 class="ellipsis">

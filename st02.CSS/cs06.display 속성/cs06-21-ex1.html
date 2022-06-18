@@ -5,12 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+          *{padding: 0 0 0 0; margin: 0 0 0 0 ; text-align: center; color:#ffffff;} /*CSS초기화*/
+        html, body {
+            height: 100%;
+        }
+        #wrap {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+        }
+        .header {
+            min-height: 80px;
+            background-color: red;
+            width: 100%;
+        }
+        .header > h1 {
+            width: 100px;
+            height: 150px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: brown;
+        }
+        .slider_section {
+            width: 50%;
+            height: calc(50%-80px);
+            background-color: skyblue;
+        }
+        .gallery_section {
+            width: 25%;
+            background-color: yellow;
+        }
+        .rankup_section {
+            width: 25%;
+            background-color: mediumaquamarine
+        }
+        .latest_post_section {
+            width: 30%;
+            background-color: purple;
+        }
+        .popular_post_section {
+            width: 30%;
+            background-color: orange;
+        }
+        .banner_section {
+            width: 20%;
+            background-color: blue;
+        }
+        .social_section {
+            width: 20%;
+            background-color: palevioletred;
+        }
+        .footer {
+            width: 100%;
+            height: 80px;
+            background-color: brown;
+        }
+    </style>
 </head>
 <body>
     <div id="wrap">
         <header class="header">
             <h1>1-1</h1>
-            <nav>1</nav>            
+            <nav>1</nav>
         </header>
         <section class="slider_section">2</section>
         <section class="gallery_section">3</section>
@@ -25,4 +86,4 @@
         <footer class="footer">9</footer>
     </div>
 </body>
-</html>
+</html>
