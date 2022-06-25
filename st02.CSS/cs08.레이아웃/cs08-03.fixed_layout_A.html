@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>레이아웃 A</title>
+    <style>
+        * {padding: 0 0 0 0; margin: 0 0 0 0;  box-sizing: border-box;}
+
+        html, body {
+            height: 100%;
+        }
+        #wrap {
+            height: 100%;
+            font-size: 30px;
+        }
+        #header {
+            background-color: green;
+            height: 100px;
+        }
+        #content {
+            background-color: purple;
+            height: calc(100% - 200px); /*calc()에서 (-)를 할때는 앞 뒤로 공백을 반드시 넣아야 함*/
+        }
+        #footer {
+            background-color: palevioletred;
+            height: 100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,4 +49,4 @@
     </div>
 </body>
 
-</html>
+</html>

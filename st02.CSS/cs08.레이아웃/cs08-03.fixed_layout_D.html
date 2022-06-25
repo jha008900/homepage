@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>레이아웃 D</title>
+    <style>
+        * {padding: 0 0 0 0; margin: 0 0 0 0; box-sizing: border-box;}
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        #header {
+        background-color: mediumaquamarine;
+           height: 100px;
+        }
+        #wrap-body {
+            height: 100%;
+        }
+        #wrap-content {
+            display: flex;
+            height: 100%;
+        }
+        #leftbar {
+            background-color: plum;
+            width: 200px;
+        }
+        #content {
+            background-color: purple;
+            width: 100%;
+        }
+        #rightbar {
+            background-color: plum;
+            width: 200px;
+        }
+        #footer {
+            background-color: orange;
+            height: 200px;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,10 +52,10 @@
         <div id='wrap-content'>
             <aside id="leftbar">
                 leftbar
-            </aside>    
+            </aside>
             <section id="content">
                 content
-            </section>    
+            </section>
             <aside id="rightbar">
                 rightbar
             </aside>
@@ -32,4 +67,4 @@
 
 </body>
 
-</html>
+</html>

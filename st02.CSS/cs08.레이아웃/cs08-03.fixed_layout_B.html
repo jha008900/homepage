@@ -1,32 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>레이아웃 B</title>
-</head>
+    <style>
+      * {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        box-sizing: border-box;
+      }
+      html, body {
+        height: 100%;
+      }
+      #wrap {
+        font-size: 30px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+      }
+      #sidebar {
+        background-color: palevioletred;
+        width: 300px;
+      }
+      #aa {
+        width: 100%;
+      }
+      #header {
+        background-color: greenyellow;
+        height: 33%;
+      }
+      #content {
+        background-color: purple;
+        height: 33%;
+      }
+      #footer {
+        background-color: darksalmon;
+        height: 33%;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
     <h1>레이아웃 B</h1>
 
     <div id="wrap">
-        <div id="sidebar">
-            sidebar
-        </div>
+      <div id="sidebar">sidebar</div>
+      <div id="aa">
+        <div id="header">header</div>
 
-        <div id="header">
-            header
-        </div>
+        <div id="content">content</div>
 
-        <div id="content">
-            content
-        </div>
-
-        <div id="footer">
-            footer
-        </div>
+        <div id="footer">footer</div>
+      </div>
     </div>
-</body>
-
-</html>
+  </body>
+</html>

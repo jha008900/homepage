@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hyun_사이트</title>
+    <style>
+      * {padding: 0 0 0 0;  margin: 0 0 0 0;  box-sizing: border-box;}
+
+      html, body {
+        background-image: url(./images/bg0.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100%;
+        width: 100%;
+      }
+      #wrap {
+        padding: 20px;
+      }
+
+     #aa {
+        background-color: aliceblue;
+        margin: 0 20px 0 20px;
+        height: 30px;
+      }
+      #aa a {
+        text-decoration: none;
+        line-height: 30px;
+        padding: 20px;
+        font-size: 14px;
+        color: black;
+      }
+      h1 {
+        display: inline-block;
+      }
+      #right {
+        display: inline-block;
+        float: right;
+      }
+      #right::after {
+        clear: both;
+        display: block;
+        content: "";
+      }
+     input {
+        width: 80px;
+      }
+     #bb {
+        padding: 20px 20px;
+        height: 100%;
+
+      }
+     #bb >h2 {
+      font-size: 50px;
+      color: white;
+     }
+      #oo {
+        width: 100px;
+        height: 40px;
+        background-color: transparent;
+      }
+      footer {
+        border: 1px solid black;
+        background-color: white;
+        /* display: flex; */
+        margin: 20px;
+        padding: 10px;
+      }
+      #f1 {
+        display: inline-block;
+      }
+      #ff {
+        float: right;
+        text-align: right;
+        font-size: 12px;
+        font-weight: bold;
+      }
+      footer::after {
+        clear: both;
+        display: block;
+        content: "";
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="wrap">
+        <h1>회사명</h1>
+        <div id="right">
+          <input type="button" value="홈" />
+          <a href="./login.html"><input type="button"  value="로그인" /></a>
+          <a href="./js/member.html"><input type="button"  value="회원가입" /></a>
+          <input type="search" value="search" />
+        </div>
+      </div>
+      <div id="aa">
+        <a href="about">ABOUT</a>
+        <a href="gallery">GALLERY</a>
+        <a href="offlce">OFFICE</a>
+        <a href="service">SERVICE</a>
+        <a href="contact">CONTACT</a>
+      </div>
+    </header>
+    <section id="bb">
+      <h2>SMART TECH + DESIGN</h2>
+      <br><br>
+      <h6>
+        당신의 기대를 뛰어 넘는 스마트한 기능의 앱과 아름다운 디자인까지
+        구현하는 최고의 파트너입니다.
+      </h6>
+      <br><br><br>
+      <input type="button" id="oo" value="둘러보기" />
+    </section>
+    <footer>
+      <div id="f1">
+        <img src="./images/footer-home.png" alt="" />
+        <img src="./images/footer_google.png" alt="" />
+        <img src="./images/footer-facebook.png" alt="" />
+      </div>
+      <div id="ff">
+        <img src="./images/footer-phone.png" alt="" />02-000-0000
+        <p>웹퍼블리셔 기초반</p>
+        <p>서울 영등포구 양산로 에이스하이테크시티3</p>
+        <p>Copyright ACG Inc. All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
